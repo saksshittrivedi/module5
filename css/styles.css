@@ -1,0 +1,98 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: gray;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: lightpink;
+  border-radius: 0;
+  border: 0;
+  padding-bottom: 25px;
+}
+.navbar-brand {
+  padding-top: 25px;
+}
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Lora', serif;
+  color: #557c3e;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+#nav-list a {
+  color: black;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid black;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+/* END HEADER */
+
+/* HOME PAGE */
+
+#chickensection, #mangosection, #salmonsection {
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3F0C1F;
+  background-color: maroon;
+}
+#chickensection div, #mangosection div, #salmonsection div{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  background-color: black;
+  color: #fff;
+  opacity: 0.8;
+  border: 2px solid black;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+p{
+  margin : 50px 5px 10px; 
+}
+
+/* END HOME PAGE */
+
+@media (max-width: 767px) {
+  /* Header */
+  #chickensection, #mangosection, #salmonsection {
+    width: 360px;
+    margin: 0 auto 15px;
+  }
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+}
